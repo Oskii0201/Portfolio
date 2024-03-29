@@ -3,5 +3,6 @@ body{
     --font-family-default: Helvetica, Arial, sens-serif;
 
     --color-text-default: #d2d2d2;
-    --color-text-purple: #c770f0;
+    --color-text-magenta: #be51f4;
+    --color-bg-dark: rgba(24, 26, 39, 0.93);
 }
