@@ -1,9 +1,9 @@
+import {Layout} from "./components/Layout/Layout.jsx";
+
 export function App() {
 
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+      <Layout/>
   )
 }
 
