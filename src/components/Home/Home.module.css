@@ -38,6 +38,7 @@
 }
 .image{
     display: flex;
+    justify-content: center;
     flex:1;
 }
 .image img{
