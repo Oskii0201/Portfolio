@@ -6,7 +6,10 @@ import {faUser} from "@fortawesome/free-regular-svg-icons/faUser";
 import {NavLink} from "react-router-dom";
 export function NavbarMobile(){
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+    const closeMobileMenu = () =>{
+        window.scrollTo(0, 0);
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    }
     return(
         <nav className={`${styles.navContainer} ${
             isMobileMenuOpen ? styles.menuOpened : ''}`}>
@@ -50,16 +53,16 @@ export function NavbarMobile(){
                     isMobileMenuOpen ? styles.menuContainerIsShown : ''}`}
             >
                 <div className={styles.navLink}>
-                    <NavLink to="/"><FontAwesomeIcon icon={faHouse} /> Home</NavLink>
+                    <NavLink to="/" onClick={closeMobileMenu}><FontAwesomeIcon icon={faHouse} /> Home</NavLink>
                 </div>
                 <div className={styles.navLink}>
-                    <NavLink to="/about"><FontAwesomeIcon icon={faUser} /> About</NavLink>
+                    <NavLink to="/about" onClick={closeMobileMenu}><FontAwesomeIcon icon={faUser} /> About</NavLink>
                 </div>
                 <div className={styles.navLink}>
-                    <NavLink to="/projects"><FontAwesomeIcon icon={faInbox} /> Projects</NavLink>
+                    <NavLink to="/projects" onClick={closeMobileMenu}><FontAwesomeIcon icon={faInbox} /> Projects</NavLink>
                 </div>
                 <div className={styles.navLink}>
-                    <NavLink to="/resume"><FontAwesomeIcon icon={faFile} /> Resume</NavLink>
+                    <NavLink to="/resume" onClick={closeMobileMenu}><FontAwesomeIcon icon={faFile} /> Resume</NavLink>
                 </div>
             </div>
         </nav>

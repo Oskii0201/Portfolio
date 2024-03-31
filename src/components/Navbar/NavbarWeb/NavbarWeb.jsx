@@ -38,16 +38,48 @@ export function NavbarWeb(){
                 {/* Navigation */}
                 <div className={styles.linkContainer}>
                     <div className={styles.navLink}>
-                        <NavLink to="/"><FontAwesomeIcon icon={faHouse} /> Home</NavLink>
+                        <NavLink to="/">
+                            {({isActive})=>{
+                                return (
+                                    <div className={`${styles.wrapper} ${isActive ? styles.active : ""}`}>
+                                        <FontAwesomeIcon icon={faHouse} /> Home
+                                    </div>
+                                )
+                            }}
+                        </NavLink>
                     </div>
                     <div className={styles.navLink}>
-                        <NavLink to="/about"><FontAwesomeIcon icon={faUser} /> About</NavLink>
+                        <NavLink to="/about">
+                            {({isActive})=>{
+                                return (
+                                    <div className={`${styles.wrapper} ${isActive ? styles.active : ""}`}>
+                                        <FontAwesomeIcon icon={faUser} /> About
+                                    </div>
+                                )
+                            }}
+                        </NavLink>
                     </div>
                     <div className={styles.navLink}>
-                        <NavLink to="/projects"><FontAwesomeIcon icon={faInbox} /> Projects</NavLink>
+                        <NavLink to="/projects">
+                            {({isActive})=>{
+                                return (
+                                    <div className={`${styles.wrapper} ${isActive ? styles.active : ""}`}>
+                                        <FontAwesomeIcon icon={faInbox} /> Projects
+                                    </div>
+                                )
+                            }}
+                        </NavLink>
                     </div>
                     <div className={styles.navLink}>
-                        <NavLink to="/resume"><FontAwesomeIcon icon={faFile} /> Resume</NavLink>
+                        <NavLink to="/resume">
+                            {({isActive})=>{
+                                return (
+                                    <div className={`${styles.wrapper} ${isActive ? styles.active : ""}`}>
+                                        <FontAwesomeIcon icon={faFile} /> Resume
+                                    </div>
+                                )
+                            }}
+                        </NavLink>
                     </div>
                 </div>
             </div>
