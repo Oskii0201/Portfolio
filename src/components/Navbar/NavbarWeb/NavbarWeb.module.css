@@ -31,7 +31,17 @@
     justify-content: space-between;
 }
 .navLink{
-    padding: 0.8rem 1.5rem;
+    margin-right: 1.5rem;
+}
+.navLink:last-child {
+    margin-right: 0;
+}
+.wrapper{
+    padding: 0.3rem 0.8rem;
+}
+.active{
+    border: 2px solid var(--color-text-default);
+    border-radius: 15px;
 }
 .navLink a{
     font-size: 1.4rem;
