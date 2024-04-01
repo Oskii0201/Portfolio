@@ -3,7 +3,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFile, faHouse, faInbox} from "@fortawesome/free-solid-svg-icons";
 import {faUser} from "@fortawesome/free-regular-svg-icons/faUser";
 import {useEffect, useRef, useState} from "react";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
+import logo from "../../../assets/initials.png"
 
 export function NavbarWeb(){
     const navRef = useRef(null);
@@ -32,7 +33,9 @@ export function NavbarWeb(){
             <div className={styles.container}>
                 {/* Logo */}
                 <div className={styles.logo}>
-                    <h1>OD</h1>
+                    <Link to="/">
+                        <img src={logo} alt="logo" />
+                    </Link>
                 </div>
 
                 {/* Navigation */}

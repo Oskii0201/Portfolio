@@ -19,10 +19,11 @@
     padding: 0 1rem;
     align-items: center;
 }
-.logo{
-    color: var(--color-text-magenta);
+.logo img{
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    max-width: 65px;
+    height: auto;
 }
 .linkContainer{
     display: flex;
