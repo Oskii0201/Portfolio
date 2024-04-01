@@ -9,17 +9,17 @@ li{
 
 h1,
 h2{
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 h3{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 a{
@@ -45,4 +45,14 @@ body{
     align-items: center;
     min-height: 100vh;
     background-image: linear-gradient(to right, #2d1950, #351f5d, #391d6e, #3a1f72, #2d1950);
+}
+
+/*Responsiveness*/
+@media only screen and (max-width:992px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
 }
