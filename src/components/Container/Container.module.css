@@ -1,0 +1,9 @@
+.container{
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.paddingBottomNone{
+    padding-bottom: 0;
+}
