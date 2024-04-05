@@ -1,0 +1,53 @@
+/*About*/
+.magenta{
+    color: var(--color-text-magenta);
+}
+.myImage{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.myImage img{
+    width: 250px;
+    border-radius: 50%;
+    height: auto;
+}
+.introduce{
+    width: 60%;
+}
+.introduce h2{
+    text-align: center;
+}
+.introduce p{
+    font-size: 1.2rem;
+}
+.introduce p,
+.introduce h2{
+    padding-bottom: 1rem;
+}
+
+/*Socials*/
+.socials {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.socials h2{
+    text-align: center;
+}
+.socials li{
+    font-size: 2.5rem;
+}
+
+/*Responsiveness*/
+@media only screen and (max-width:992px){
+    .myImage,
+    .introduce{
+        width: 100%;
+    }
+    .myImage img{
+        width: 175px;
+    }
+}
