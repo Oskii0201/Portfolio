@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+.element{
+    padding: 0.8rem;
+    margin: 0.3rem;
+    width: 11rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--color-text-magenta);
+}
+.element span{
+    display: flex;
+    align-items: center;
+}
+
+/*Responsiveness*/
+@media only screen and (max-width:488px){
+    .container{
+        padding: 1rem 0 0 0;
+    }
+    .element{
+        width: 8rem;
+        height: 4.5rem;
+    }
+}
