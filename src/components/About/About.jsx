@@ -1,9 +1,10 @@
 import styles from "./About.module.css"
-import {WorkInProgress} from "../WorkInProgress/WorkInProgress.jsx";
+import {Container} from "../Container/Container.jsx";
+import {Description} from "./Description/Description.jsx";
 export function About(){
     return(
-        <div className={styles.inProgress}>
-            <WorkInProgress/>
-        </div>
+        <Container>
+            <Description/>
+        </Container>
     )
 }

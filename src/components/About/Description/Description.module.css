@@ -1,0 +1,60 @@
+.magenta{
+    color: var(--color-text-magenta);
+}
+.about{
+    width: 60%;
+    padding: 2rem;
+}
+.about h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.wrapper{
+    padding: 1rem;
+    align-items: center;
+}
+.wrapper p{
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.activities h3{
+    padding: 1rem 0;
+}
+.activitiesList {
+    margin-left: 2rem;
+}
+.activitiesList li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.activitiesList li:last-child {
+    margin-bottom: 0;
+}
+.activitiesList li svg{
+    margin-right: 0.5rem;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    flex:1;
+}
+.image img{
+    max-width: 350px;
+    height: auto;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/*Responsiveness*/
+@media only screen and (max-width:1024px){
+    .image img{
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width:830px){
+    .about{
+        padding: 0;
+        width: 100%;
+    }
+}
