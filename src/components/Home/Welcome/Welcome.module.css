@@ -1,0 +1,89 @@
+/*Welcome*/
+.welcome{
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.welcome h1{
+    padding-bottom: 1.2rem;
+    margin-left: 3rem;
+}
+.welcome h2{
+    margin-left: 4rem;
+}
+.welcome img{
+    width: 50px;
+    height: auto;
+    animation: shake 2s infinite;
+}
+.magenta{
+    color: var(--color-text-magenta);
+}
+.typewritterWrapper{
+    height: 2rem;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    flex:1;
+}
+.image img{
+    max-width: 350px;
+    height: auto;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/*Responsiveness*/
+@media only screen and (max-width:992px){
+    .welcome img{
+        width: 30px;
+    }
+    .image img{
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width:670px){
+    .welcome{
+        width: 100%;
+    }
+    .welcome h1{
+        margin-left: 1.5rem;
+    }
+    .welcome h2{
+        margin-left: 2.5rem;
+    }
+}
+
+/*Animation*/
+@keyframes shake {
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 100% 50%;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+}

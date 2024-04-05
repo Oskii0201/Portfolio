@@ -1,0 +1,10 @@
+.magenta{
+    color: var(--color-text-magenta);
+}
+.wrapper h2{
+    padding: 0 0 0.5rem 1.5rem;
+    border-bottom: 3px solid var(--color-text-magenta);
+}
+.listWrapper span{
+    font-size: 3rem;
+}

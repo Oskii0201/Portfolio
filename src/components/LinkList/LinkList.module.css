@@ -1,0 +1,18 @@
+.linkList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.linkList li {
+    margin-right: 1.5rem;
+}
+.linkList li svg{
+    transition: all 0.3s ease-in-out;
+}
+.linkList li:last-child {
+    margin-right: 0;
+}
+.linkList li svg:hover {
+    color: rgba(133, 73, 190, 0.7);
+    transform: scale(1.3);
+}
