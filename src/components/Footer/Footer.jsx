@@ -1,6 +1,4 @@
 import styles from "./Footer.module.css"
-import {faFacebook, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {LinkList} from "../LinkList/LinkList.jsx";
 export function Footer(){
     return(
