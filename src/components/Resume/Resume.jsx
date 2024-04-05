@@ -2,11 +2,12 @@ import styles from "./Resume.module.css"
 import pdf from "../../assets/OskarDybasResume.pdf"
 import { Document, Page, pdfjs } from "react-pdf";
 import {useEffect, useState} from "react";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 import 'react-pdf/dist/Page/TextLayer.css';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import {faFileArrowDown} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Container} from "../Container/Container.jsx";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 export function Resume(){
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -32,22 +33,27 @@ export function Resume(){
             return 0.6;
         }
     };
-    return(
-        <div className={styles.resumeContainer}>
-            {/*Download button*/}
+    const downloadButton = () =>{
+        return(
             <div className={styles.row}>
                 <a href={pdf} target="_blank"><FontAwesomeIcon icon={faFileArrowDown} /> Download CV</a>
             </div>
+        )
+    }
+    return(
+        <Container>
+            {/*Download button*/}
+            {downloadButton()}
+
             {/*Resume*/}
             <div className={styles.resumeRow}>
                 <Document file={pdf}>
                     <Page pageNumber={1} scale={calculateScale()}/>
                 </Document>
             </div>
+
             {/*Download button*/}
-            <div className={styles.row}>
-                <a href={pdf} target="_blank"><FontAwesomeIcon icon={faFileArrowDown} /> Download CV</a>
-            </div>
-        </div>
+            {downloadButton()}
+        </Container>
     )
 }
