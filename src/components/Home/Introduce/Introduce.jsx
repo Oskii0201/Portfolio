@@ -1,6 +1,6 @@
 import styles from "./Introduce.module.css"
 import {Row} from "../../Row/Row.jsx";
-import myImage from "../../../assets/OskarDybas.jpeg";
+import myImage from "../../../assets/OskarDybas.jpg";
 import {Container} from "../../Container/Container.jsx";
 import {LinkList} from "../../LinkList/LinkList.jsx";
 export function Introduce(){

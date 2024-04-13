@@ -66,8 +66,7 @@
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
 }
-.navLink a:hover::after,
-.navLink a:focus::after {
+.navLink a:hover::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
 }
